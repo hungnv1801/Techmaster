@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Light View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LightViewController" customModule="Den" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ewf-fN-NEe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxs-eq-t4N">
+                                <rect key="frame" x="182.5" y="811" width="51" height="31"/>
+                                <connections>
+                                    <action selector="offBulb:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rb4-7T-0NE"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-eo-CBD">
+                                <rect key="frame" x="156" y="749" width="103" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sI0-fJ-muD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ewf-fN-NEe" secondAttribute="bottom" id="Cgg-w7-1Kv"/>
+                            <constraint firstItem="fxs-eq-t4N" firstAttribute="top" secondItem="DMo-eo-CBD" secondAttribute="bottom" constant="20" id="G3O-bg-JhT"/>
+                            <constraint firstItem="fxs-eq-t4N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hup-1c-Hj8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DMo-eo-CBD" secondAttribute="trailing" constant="155" id="No3-qZ-yLw"/>
+                            <constraint firstItem="fxs-eq-t4N" firstAttribute="top" secondItem="DMo-eo-CBD" secondAttribute="bottom" constant="20" id="QTa-th-et9"/>
+                            <constraint firstAttribute="trailing" secondItem="ewf-fN-NEe" secondAttribute="trailing" id="R0R-or-68f"/>
+                            <constraint firstItem="ewf-fN-NEe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hxp-vj-2zG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fxs-eq-t4N" secondAttribute="bottom" constant="20" id="piU-f6-gX2"/>
+                            <constraint firstItem="DMo-eo-CBD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="qpU-1X-OBT"/>
+                            <constraint firstItem="ewf-fN-NEe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yI2-yf-I7d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bulbImageView" destination="ewf-fN-NEe" id="Txb-fF-LEH"/>
+                        <outlet property="isOnButton" destination="DMo-eo-CBD" id="OLn-Id-UWD"/>
+                        <outlet property="isOnSwitch" destination="fxs-eq-t4N" id="WVD-Ez-NJD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+</document>
