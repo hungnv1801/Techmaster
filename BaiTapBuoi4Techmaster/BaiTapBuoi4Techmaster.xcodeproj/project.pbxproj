@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EDAB440254F3A75000912C0 /* ResultBMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDAB43F254F3A75000912C0 /* ResultBMIViewController.swift */; };
 		0EE36513254AAF050041E0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE36512254AAF050041E0FC /* AppDelegate.swift */; };
 		0EE36515254AAF050041E0FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE36514254AAF050041E0FC /* SceneDelegate.swift */; };
 		0EE36517254AAF050041E0FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE36516254AAF050041E0FC /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EDAB43F254F3A75000912C0 /* ResultBMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIViewController.swift; sourceTree = "<group>"; };
 		0EE3650F254AAF050041E0FC /* BaiTapBuoi4Techmaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiTapBuoi4Techmaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE36512254AAF050041E0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE36514254AAF050041E0FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				0EE36514254AAF050041E0FC /* SceneDelegate.swift */,
 				0EE36516254AAF050041E0FC /* ViewController.swift */,
 				0EE36526254B22B50041E0FC /* BMICalculatorViewController.swift */,
+				0EDAB43F254F3A75000912C0 /* ResultBMIViewController.swift */,
 				0EE36518254AAF050041E0FC /* Main.storyboard */,
 				0EE3651B254AAF090041E0FC /* Assets.xcassets */,
 				0EE3651D254AAF090041E0FC /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				0EE36517254AAF050041E0FC /* ViewController.swift in Sources */,
 				0EE36513254AAF050041E0FC /* AppDelegate.swift in Sources */,
+				0EDAB440254F3A75000912C0 /* ResultBMIViewController.swift in Sources */,
 				0EE36515254AAF050041E0FC /* SceneDelegate.swift in Sources */,
 				0EE36527254B22B50041E0FC /* BMICalculatorViewController.swift in Sources */,
 			);
